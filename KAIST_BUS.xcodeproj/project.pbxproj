@@ -21,6 +21,22 @@
 		E59DDDEB17E0D7450019AC6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDDCC17E0D7450019AC6B /* Foundation.framework */; };
 		E59DDDF317E0D7450019AC6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E59DDDF117E0D7450019AC6B /* InfoPlist.strings */; };
 		E59DDDF617E0D7450019AC6B /* KAIST_BUSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDDF517E0D7450019AC6B /* KAIST_BUSTests.m */; };
+		E59DDE0E17E0D83C0019AC6B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE0C17E0D83C0019AC6B /* MainViewController.m */; };
+		E59DDE0F17E0D83C0019AC6B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE0D17E0D83C0019AC6B /* MainViewController.xib */; };
+		E59DDE1717E0D85A0019AC6B /* SidebarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE1217E0D85A0019AC6B /* SidebarCell.m */; };
+		E59DDE1817E0D85A0019AC6B /* SidebarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE1317E0D85A0019AC6B /* SidebarCell.xib */; };
+		E59DDE1917E0D85A0019AC6B /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE1517E0D85A0019AC6B /* SidebarViewController.m */; };
+		E59DDE1A17E0D85A0019AC6B /* SidebarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE1617E0D85A0019AC6B /* SidebarViewController.xib */; };
+		E59DDE2C17E0D9290019AC6B /* UINavigationItem+JTRevealSidebarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE2917E0D9290019AC6B /* UINavigationItem+JTRevealSidebarV2.m */; };
+		E59DDE2D17E0D9290019AC6B /* UIViewController+JTRevealSidebarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE2B17E0D9290019AC6B /* UIViewController+JTRevealSidebarV2.m */; };
+		E59DDE3117E0D9CC0019AC6B /* RootViewControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE3017E0D9CC0019AC6B /* RootViewControllerBase.m */; };
+		E59DDE3617E0DAA40019AC6B /* ButtonMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE3417E0DAA40019AC6B /* ButtonMenu.png */; };
+		E59DDE3717E0DAA40019AC6B /* ButtonMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE3517E0DAA40019AC6B /* ButtonMenu@2x.png */; };
+		E59DDE3C17E0DB7A0019AC6B /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE3A17E0DB7A0019AC6B /* AboutViewController.m */; };
+		E59DDE3D17E0DB7A0019AC6B /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE3B17E0DB7A0019AC6B /* AboutViewController.xib */; };
+		E59DDE3F17E0DD200019AC6B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDE3E17E0DD200019AC6B /* MessageUI.framework */; };
+		E59DDE4417E0E0A60019AC6B /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE4217E0E0A60019AC6B /* TimetableViewController.m */; };
+		E59DDE4517E0E0A60019AC6B /* TimetableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE4317E0E0A60019AC6B /* TimetableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +69,31 @@
 		E59DDDF217E0D7450019AC6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E59DDDF417E0D7450019AC6B /* KAIST_BUSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAIST_BUSTests.h; sourceTree = "<group>"; };
 		E59DDDF517E0D7450019AC6B /* KAIST_BUSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAIST_BUSTests.m; sourceTree = "<group>"; };
+		E59DDE0B17E0D83C0019AC6B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewController/MainViewController/MainViewController.h; sourceTree = "<group>"; };
+		E59DDE0C17E0D83C0019AC6B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewController/MainViewController/MainViewController.m; sourceTree = "<group>"; };
+		E59DDE0D17E0D83C0019AC6B /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ViewController/MainViewController/MainViewController.xib; sourceTree = "<group>"; };
+		E59DDE1117E0D85A0019AC6B /* SidebarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarCell.h; sourceTree = "<group>"; };
+		E59DDE1217E0D85A0019AC6B /* SidebarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarCell.m; sourceTree = "<group>"; };
+		E59DDE1317E0D85A0019AC6B /* SidebarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidebarCell.xib; sourceTree = "<group>"; };
+		E59DDE1417E0D85A0019AC6B /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		E59DDE1517E0D85A0019AC6B /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
+		E59DDE1617E0D85A0019AC6B /* SidebarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidebarViewController.xib; sourceTree = "<group>"; };
+		E59DDE2717E0D9290019AC6B /* JTRevealSidebarV2Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTRevealSidebarV2Delegate.h; sourceTree = "<group>"; };
+		E59DDE2817E0D9290019AC6B /* UINavigationItem+JTRevealSidebarV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+JTRevealSidebarV2.h"; sourceTree = "<group>"; };
+		E59DDE2917E0D9290019AC6B /* UINavigationItem+JTRevealSidebarV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+JTRevealSidebarV2.m"; sourceTree = "<group>"; };
+		E59DDE2A17E0D9290019AC6B /* UIViewController+JTRevealSidebarV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTRevealSidebarV2.h"; sourceTree = "<group>"; };
+		E59DDE2B17E0D9290019AC6B /* UIViewController+JTRevealSidebarV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTRevealSidebarV2.m"; sourceTree = "<group>"; };
+		E59DDE2F17E0D9CC0019AC6B /* RootViewControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewControllerBase.h; sourceTree = "<group>"; };
+		E59DDE3017E0D9CC0019AC6B /* RootViewControllerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewControllerBase.m; sourceTree = "<group>"; };
+		E59DDE3417E0DAA40019AC6B /* ButtonMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonMenu.png; sourceTree = "<group>"; };
+		E59DDE3517E0DAA40019AC6B /* ButtonMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonMenu@2x.png"; sourceTree = "<group>"; };
+		E59DDE3917E0DB7A0019AC6B /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		E59DDE3A17E0DB7A0019AC6B /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		E59DDE3B17E0DB7A0019AC6B /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		E59DDE3E17E0DD200019AC6B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E59DDE4117E0E0A60019AC6B /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimetableViewController.h; path = TimetableViewController/TimetableViewController.h; sourceTree = "<group>"; };
+		E59DDE4217E0E0A60019AC6B /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimetableViewController.m; path = TimetableViewController/TimetableViewController.m; sourceTree = "<group>"; };
+		E59DDE4317E0E0A60019AC6B /* TimetableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimetableViewController.xib; path = TimetableViewController/TimetableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E59DDE3F17E0DD200019AC6B /* MessageUI.framework in Frameworks */,
 				E59DDDCB17E0D7450019AC6B /* UIKit.framework in Frameworks */,
 				E59DDDCD17E0D7450019AC6B /* Foundation.framework in Frameworks */,
 				E59DDDCF17E0D7450019AC6B /* CoreGraphics.framework in Frameworks */,
@@ -82,6 +124,8 @@
 		E59DDDBE17E0D7440019AC6B = {
 			isa = PBXGroup;
 			children = (
+				E59DDE3317E0DAA40019AC6B /* img */,
+				E59DDE2517E0D9290019AC6B /* lib */,
 				E59DDDD017E0D7450019AC6B /* KAIST_BUS */,
 				E59DDDEE17E0D7450019AC6B /* KAIST_BUSTests */,
 				E59DDDC917E0D7440019AC6B /* Frameworks */,
@@ -101,6 +145,7 @@
 		E59DDDC917E0D7440019AC6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E59DDE3E17E0DD200019AC6B /* MessageUI.framework */,
 				E59DDDCA17E0D7440019AC6B /* UIKit.framework */,
 				E59DDDCC17E0D7450019AC6B /* Foundation.framework */,
 				E59DDDCE17E0D7450019AC6B /* CoreGraphics.framework */,
@@ -112,6 +157,7 @@
 		E59DDDD017E0D7450019AC6B /* KAIST_BUS */ = {
 			isa = PBXGroup;
 			children = (
+				E59DDDFF17E0D75D0019AC6B /* ViewController */,
 				E59DDDD917E0D7450019AC6B /* AppDelegate.h */,
 				E59DDDDA17E0D7450019AC6B /* AppDelegate.m */,
 				E59DDDD117E0D7450019AC6B /* Supporting Files */,
@@ -150,6 +196,103 @@
 				E59DDDF117E0D7450019AC6B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E59DDDFF17E0D75D0019AC6B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDE4017E0DF410019AC6B /* TimetableViewController */,
+				E59DDE3817E0DB790019AC6B /* AboutViewController */,
+				E59DDE2E17E0D9CC0019AC6B /* RootViewController */,
+				E59DDE1017E0D85A0019AC6B /* SidebarViewController */,
+				E59DDE0017E0D7640019AC6B /* MainViewController */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E59DDE0017E0D7640019AC6B /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDE0B17E0D83C0019AC6B /* MainViewController.h */,
+				E59DDE0C17E0D83C0019AC6B /* MainViewController.m */,
+				E59DDE0D17E0D83C0019AC6B /* MainViewController.xib */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		E59DDE1017E0D85A0019AC6B /* SidebarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDE1117E0D85A0019AC6B /* SidebarCell.h */,
+				E59DDE1217E0D85A0019AC6B /* SidebarCell.m */,
+				E59DDE1317E0D85A0019AC6B /* SidebarCell.xib */,
+				E59DDE1417E0D85A0019AC6B /* SidebarViewController.h */,
+				E59DDE1517E0D85A0019AC6B /* SidebarViewController.m */,
+				E59DDE1617E0D85A0019AC6B /* SidebarViewController.xib */,
+			);
+			name = SidebarViewController;
+			path = ViewController/SidebarViewController;
+			sourceTree = "<group>";
+		};
+		E59DDE2517E0D9290019AC6B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDE2617E0D9290019AC6B /* JTRevealSidebarV2 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E59DDE2617E0D9290019AC6B /* JTRevealSidebarV2 */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDE2717E0D9290019AC6B /* JTRevealSidebarV2Delegate.h */,
+				E59DDE2817E0D9290019AC6B /* UINavigationItem+JTRevealSidebarV2.h */,
+				E59DDE2917E0D9290019AC6B /* UINavigationItem+JTRevealSidebarV2.m */,
+				E59DDE2A17E0D9290019AC6B /* UIViewController+JTRevealSidebarV2.h */,
+				E59DDE2B17E0D9290019AC6B /* UIViewController+JTRevealSidebarV2.m */,
+			);
+			path = JTRevealSidebarV2;
+			sourceTree = "<group>";
+		};
+		E59DDE2E17E0D9CC0019AC6B /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDE2F17E0D9CC0019AC6B /* RootViewControllerBase.h */,
+				E59DDE3017E0D9CC0019AC6B /* RootViewControllerBase.m */,
+			);
+			name = RootViewController;
+			path = ViewController/RootViewController;
+			sourceTree = "<group>";
+		};
+		E59DDE3317E0DAA40019AC6B /* img */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDE3417E0DAA40019AC6B /* ButtonMenu.png */,
+				E59DDE3517E0DAA40019AC6B /* ButtonMenu@2x.png */,
+			);
+			name = img;
+			path = KAIST_BUS/img;
+			sourceTree = "<group>";
+		};
+		E59DDE3817E0DB790019AC6B /* AboutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDE3917E0DB7A0019AC6B /* AboutViewController.h */,
+				E59DDE3A17E0DB7A0019AC6B /* AboutViewController.m */,
+				E59DDE3B17E0DB7A0019AC6B /* AboutViewController.xib */,
+			);
+			name = AboutViewController;
+			path = ViewController/AboutViewController;
+			sourceTree = "<group>";
+		};
+		E59DDE4017E0DF410019AC6B /* TimetableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDE4117E0E0A60019AC6B /* TimetableViewController.h */,
+				E59DDE4217E0E0A60019AC6B /* TimetableViewController.m */,
+				E59DDE4317E0E0A60019AC6B /* TimetableViewController.xib */,
+			);
+			name = TimetableViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +370,13 @@
 				E59DDDDD17E0D7450019AC6B /* Default.png in Resources */,
 				E59DDDDF17E0D7450019AC6B /* Default@2x.png in Resources */,
 				E59DDDE117E0D7450019AC6B /* Default-568h@2x.png in Resources */,
+				E59DDE0F17E0D83C0019AC6B /* MainViewController.xib in Resources */,
+				E59DDE1817E0D85A0019AC6B /* SidebarCell.xib in Resources */,
+				E59DDE1A17E0D85A0019AC6B /* SidebarViewController.xib in Resources */,
+				E59DDE3617E0DAA40019AC6B /* ButtonMenu.png in Resources */,
+				E59DDE3717E0DAA40019AC6B /* ButtonMenu@2x.png in Resources */,
+				E59DDE3D17E0DB7A0019AC6B /* AboutViewController.xib in Resources */,
+				E59DDE4517E0E0A60019AC6B /* TimetableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +413,14 @@
 			files = (
 				E59DDDD717E0D7450019AC6B /* main.m in Sources */,
 				E59DDDDB17E0D7450019AC6B /* AppDelegate.m in Sources */,
+				E59DDE0E17E0D83C0019AC6B /* MainViewController.m in Sources */,
+				E59DDE1717E0D85A0019AC6B /* SidebarCell.m in Sources */,
+				E59DDE1917E0D85A0019AC6B /* SidebarViewController.m in Sources */,
+				E59DDE2C17E0D9290019AC6B /* UINavigationItem+JTRevealSidebarV2.m in Sources */,
+				E59DDE2D17E0D9290019AC6B /* UIViewController+JTRevealSidebarV2.m in Sources */,
+				E59DDE3117E0D9CC0019AC6B /* RootViewControllerBase.m in Sources */,
+				E59DDE3C17E0DB7A0019AC6B /* AboutViewController.m in Sources */,
+				E59DDE4417E0E0A60019AC6B /* TimetableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
