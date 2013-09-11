@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E59DDDCB17E0D7450019AC6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDDCA17E0D7440019AC6B /* UIKit.framework */; };
+		E59DDDCD17E0D7450019AC6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDDCC17E0D7450019AC6B /* Foundation.framework */; };
+		E59DDDCF17E0D7450019AC6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDDCE17E0D7450019AC6B /* CoreGraphics.framework */; };
+		E59DDDD517E0D7450019AC6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E59DDDD317E0D7450019AC6B /* InfoPlist.strings */; };
+		E59DDDD717E0D7450019AC6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDDD617E0D7450019AC6B /* main.m */; };
+		E59DDDDB17E0D7450019AC6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDDDA17E0D7450019AC6B /* AppDelegate.m */; };
+		E59DDDDD17E0D7450019AC6B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDDDC17E0D7450019AC6B /* Default.png */; };
+		E59DDDDF17E0D7450019AC6B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDDDE17E0D7450019AC6B /* Default@2x.png */; };
+		E59DDDE117E0D7450019AC6B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDDE017E0D7450019AC6B /* Default-568h@2x.png */; };
+		E59DDDE917E0D7450019AC6B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDDE817E0D7450019AC6B /* SenTestingKit.framework */; };
+		E59DDDEA17E0D7450019AC6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDDCA17E0D7440019AC6B /* UIKit.framework */; };
+		E59DDDEB17E0D7450019AC6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDDCC17E0D7450019AC6B /* Foundation.framework */; };
+		E59DDDF317E0D7450019AC6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E59DDDF117E0D7450019AC6B /* InfoPlist.strings */; };
+		E59DDDF617E0D7450019AC6B /* KAIST_BUSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDDF517E0D7450019AC6B /* KAIST_BUSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E59DDDEC17E0D7450019AC6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E59DDDBF17E0D7440019AC6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E59DDDC617E0D7440019AC6B;
+			remoteInfo = KAIST_BUS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E59DDDC717E0D7440019AC6B /* KAIST_BUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAIST_BUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59DDDCA17E0D7440019AC6B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E59DDDCC17E0D7450019AC6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E59DDDCE17E0D7450019AC6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E59DDDD217E0D7450019AC6B /* KAIST_BUS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KAIST_BUS-Info.plist"; sourceTree = "<group>"; };
+		E59DDDD417E0D7450019AC6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E59DDDD617E0D7450019AC6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E59DDDD817E0D7450019AC6B /* KAIST_BUS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KAIST_BUS-Prefix.pch"; sourceTree = "<group>"; };
+		E59DDDD917E0D7450019AC6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E59DDDDA17E0D7450019AC6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E59DDDDC17E0D7450019AC6B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E59DDDDE17E0D7450019AC6B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E59DDDE017E0D7450019AC6B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E59DDDE717E0D7450019AC6B /* KAIST_BUSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAIST_BUSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59DDDE817E0D7450019AC6B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E59DDDF017E0D7450019AC6B /* KAIST_BUSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KAIST_BUSTests-Info.plist"; sourceTree = "<group>"; };
+		E59DDDF217E0D7450019AC6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E59DDDF417E0D7450019AC6B /* KAIST_BUSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAIST_BUSTests.h; sourceTree = "<group>"; };
+		E59DDDF517E0D7450019AC6B /* KAIST_BUSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAIST_BUSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E59DDDC417E0D7440019AC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59DDDCB17E0D7450019AC6B /* UIKit.framework in Frameworks */,
+				E59DDDCD17E0D7450019AC6B /* Foundation.framework in Frameworks */,
+				E59DDDCF17E0D7450019AC6B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59DDDE317E0D7450019AC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59DDDE917E0D7450019AC6B /* SenTestingKit.framework in Frameworks */,
+				E59DDDEA17E0D7450019AC6B /* UIKit.framework in Frameworks */,
+				E59DDDEB17E0D7450019AC6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E59DDDBE17E0D7440019AC6B = {
+			isa = PBXGroup;
+			children = (
+				E59DDDD017E0D7450019AC6B /* KAIST_BUS */,
+				E59DDDEE17E0D7450019AC6B /* KAIST_BUSTests */,
+				E59DDDC917E0D7440019AC6B /* Frameworks */,
+				E59DDDC817E0D7440019AC6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E59DDDC817E0D7440019AC6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDDC717E0D7440019AC6B /* KAIST_BUS.app */,
+				E59DDDE717E0D7450019AC6B /* KAIST_BUSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E59DDDC917E0D7440019AC6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDDCA17E0D7440019AC6B /* UIKit.framework */,
+				E59DDDCC17E0D7450019AC6B /* Foundation.framework */,
+				E59DDDCE17E0D7450019AC6B /* CoreGraphics.framework */,
+				E59DDDE817E0D7450019AC6B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E59DDDD017E0D7450019AC6B /* KAIST_BUS */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDDD917E0D7450019AC6B /* AppDelegate.h */,
+				E59DDDDA17E0D7450019AC6B /* AppDelegate.m */,
+				E59DDDD117E0D7450019AC6B /* Supporting Files */,
+			);
+			path = KAIST_BUS;
+			sourceTree = "<group>";
+		};
+		E59DDDD117E0D7450019AC6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDDD217E0D7450019AC6B /* KAIST_BUS-Info.plist */,
+				E59DDDD317E0D7450019AC6B /* InfoPlist.strings */,
+				E59DDDD617E0D7450019AC6B /* main.m */,
+				E59DDDD817E0D7450019AC6B /* KAIST_BUS-Prefix.pch */,
+				E59DDDDC17E0D7450019AC6B /* Default.png */,
+				E59DDDDE17E0D7450019AC6B /* Default@2x.png */,
+				E59DDDE017E0D7450019AC6B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E59DDDEE17E0D7450019AC6B /* KAIST_BUSTests */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDDF417E0D7450019AC6B /* KAIST_BUSTests.h */,
+				E59DDDF517E0D7450019AC6B /* KAIST_BUSTests.m */,
+				E59DDDEF17E0D7450019AC6B /* Supporting Files */,
+			);
+			path = KAIST_BUSTests;
+			sourceTree = "<group>";
+		};
+		E59DDDEF17E0D7450019AC6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E59DDDF017E0D7450019AC6B /* KAIST_BUSTests-Info.plist */,
+				E59DDDF117E0D7450019AC6B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E59DDDC617E0D7440019AC6B /* KAIST_BUS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E59DDDF917E0D7450019AC6B /* Build configuration list for PBXNativeTarget "KAIST_BUS" */;
+			buildPhases = (
+				E59DDDC317E0D7440019AC6B /* Sources */,
+				E59DDDC417E0D7440019AC6B /* Frameworks */,
+				E59DDDC517E0D7440019AC6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KAIST_BUS;
+			productName = KAIST_BUS;
+			productReference = E59DDDC717E0D7440019AC6B /* KAIST_BUS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E59DDDE617E0D7450019AC6B /* KAIST_BUSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E59DDDFC17E0D7450019AC6B /* Build configuration list for PBXNativeTarget "KAIST_BUSTests" */;
+			buildPhases = (
+				E59DDDE217E0D7450019AC6B /* Sources */,
+				E59DDDE317E0D7450019AC6B /* Frameworks */,
+				E59DDDE417E0D7450019AC6B /* Resources */,
+				E59DDDE517E0D7450019AC6B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E59DDDED17E0D7450019AC6B /* PBXTargetDependency */,
+			);
+			name = KAIST_BUSTests;
+			productName = KAIST_BUSTests;
+			productReference = E59DDDE717E0D7450019AC6B /* KAIST_BUSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E59DDDBF17E0D7440019AC6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Kim Won Jung";
+			};
+			buildConfigurationList = E59DDDC217E0D7440019AC6B /* Build configuration list for PBXProject "KAIST_BUS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E59DDDBE17E0D7440019AC6B;
+			productRefGroup = E59DDDC817E0D7440019AC6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E59DDDC617E0D7440019AC6B /* KAIST_BUS */,
+				E59DDDE617E0D7450019AC6B /* KAIST_BUSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E59DDDC517E0D7440019AC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59DDDD517E0D7450019AC6B /* InfoPlist.strings in Resources */,
+				E59DDDDD17E0D7450019AC6B /* Default.png in Resources */,
+				E59DDDDF17E0D7450019AC6B /* Default@2x.png in Resources */,
+				E59DDDE117E0D7450019AC6B /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59DDDE417E0D7450019AC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59DDDF317E0D7450019AC6B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E59DDDE517E0D7450019AC6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E59DDDC317E0D7440019AC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59DDDD717E0D7450019AC6B /* main.m in Sources */,
+				E59DDDDB17E0D7450019AC6B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59DDDE217E0D7450019AC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E59DDDF617E0D7450019AC6B /* KAIST_BUSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E59DDDED17E0D7450019AC6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E59DDDC617E0D7440019AC6B /* KAIST_BUS */;
+			targetProxy = E59DDDEC17E0D7450019AC6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E59DDDD317E0D7450019AC6B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E59DDDD417E0D7450019AC6B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E59DDDF117E0D7450019AC6B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E59DDDF217E0D7450019AC6B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E59DDDF717E0D7450019AC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E59DDDF817E0D7450019AC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E59DDDFA17E0D7450019AC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KAIST_BUS/KAIST_BUS-Prefix.pch";
+				INFOPLIST_FILE = "KAIST_BUS/KAIST_BUS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E59DDDFB17E0D7450019AC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KAIST_BUS/KAIST_BUS-Prefix.pch";
+				INFOPLIST_FILE = "KAIST_BUS/KAIST_BUS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E59DDDFD17E0D7450019AC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KAIST_BUS.app/KAIST_BUS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KAIST_BUS/KAIST_BUS-Prefix.pch";
+				INFOPLIST_FILE = "KAIST_BUSTests/KAIST_BUSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E59DDDFE17E0D7450019AC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KAIST_BUS.app/KAIST_BUS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KAIST_BUS/KAIST_BUS-Prefix.pch";
+				INFOPLIST_FILE = "KAIST_BUSTests/KAIST_BUSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E59DDDC217E0D7440019AC6B /* Build configuration list for PBXProject "KAIST_BUS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59DDDF717E0D7450019AC6B /* Debug */,
+				E59DDDF817E0D7450019AC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E59DDDF917E0D7450019AC6B /* Build configuration list for PBXNativeTarget "KAIST_BUS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59DDDFA17E0D7450019AC6B /* Debug */,
+				E59DDDFB17E0D7450019AC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E59DDDFC17E0D7450019AC6B /* Build configuration list for PBXNativeTarget "KAIST_BUSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59DDDFD17E0D7450019AC6B /* Debug */,
+				E59DDDFE17E0D7450019AC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E59DDDBF17E0D7440019AC6B /* Project object */;
+}
