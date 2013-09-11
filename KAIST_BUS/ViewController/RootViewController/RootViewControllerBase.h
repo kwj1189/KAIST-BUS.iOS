@@ -12,6 +12,8 @@
 @interface RootViewControllerBase : UIViewController<JTRevealSidebarV2Delegate, SidebarViewControllerDelegate>
 
 @property (strong, nonatomic) SidebarViewController *sidebarViewController;
+@property (strong, atomic) NSIndexPath *sidebarIndexPath;
+
 - (void) showLoading;
 - (void) hideLoading;
 @property (strong, nonatomic) UIView *loadingView;

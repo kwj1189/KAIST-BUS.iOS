@@ -37,6 +37,7 @@
 		E59DDE3F17E0DD200019AC6B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDE3E17E0DD200019AC6B /* MessageUI.framework */; };
 		E59DDE4417E0E0A60019AC6B /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE4217E0E0A60019AC6B /* TimetableViewController.m */; };
 		E59DDE4517E0E0A60019AC6B /* TimetableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE4317E0E0A60019AC6B /* TimetableViewController.xib */; };
+		E59DDE4717E0E4D10019AC6B /* BonwonMunji.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE4617E0E4D10019AC6B /* BonwonMunji.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		E59DDE4117E0E0A60019AC6B /* TimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimetableViewController.h; path = TimetableViewController/TimetableViewController.h; sourceTree = "<group>"; };
 		E59DDE4217E0E0A60019AC6B /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimetableViewController.m; path = TimetableViewController/TimetableViewController.m; sourceTree = "<group>"; };
 		E59DDE4317E0E0A60019AC6B /* TimetableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimetableViewController.xib; path = TimetableViewController/TimetableViewController.xib; sourceTree = "<group>"; };
+		E59DDE4617E0E4D10019AC6B /* BonwonMunji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BonwonMunji.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				E59DDDDC17E0D7450019AC6B /* Default.png */,
 				E59DDDDE17E0D7450019AC6B /* Default@2x.png */,
 				E59DDDE017E0D7450019AC6B /* Default-568h@2x.png */,
+				E59DDE4617E0E4D10019AC6B /* BonwonMunji.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				E59DDE3717E0DAA40019AC6B /* ButtonMenu@2x.png in Resources */,
 				E59DDE3D17E0DB7A0019AC6B /* AboutViewController.xib in Resources */,
 				E59DDE4517E0E0A60019AC6B /* TimetableViewController.xib in Resources */,
+				E59DDE4717E0E4D10019AC6B /* BonwonMunji.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

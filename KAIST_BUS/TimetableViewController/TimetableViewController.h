@@ -8,6 +8,11 @@
 
 #import "RootViewControllerBase.h"
 
-@interface TimetableViewController : RootViewControllerBase<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface TimetableViewController : RootViewControllerBase<UITableViewDataSource, UITableViewDelegate>
+- (IBAction)showWeekdayTimes:(UIButton *)sender;
 
+- (IBAction)showWeekendTimes:(UIButton *)sender;
+@property (strong, nonatomic) NSDictionary *timeInfo;
+@property (strong, nonatomic) IBOutlet UITableView *timeTableView;
+@property (strong, nonatomic) NSArray *times;
 @end

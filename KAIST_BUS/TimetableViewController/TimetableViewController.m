@@ -13,6 +13,7 @@
 @end
 
 @implementation TimetableViewController
+@synthesize timeInfo, times, timeTableView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //NSLog(@"times: %@", timeInfo);
+    times = timeInfo[@"weekday"];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -37,18 +40,50 @@
 
 
 #pragma collection view
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
+    return 1;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    NSUInteger row = [indexPath row];
+    NSUInteger section = [indexPath section];
+    
+    UINib *nib;
+    
+    static NSString *CellIdentifier = @"TimetableCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
+    }
+    
+    // Configure the cell...
+    
+    
+    cell.textLabel.text = times[row];
+    
+    // cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    return cell;
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    return [times count];
+}
+- (IBAction)showWeekdayTimes:(UIButton *)sender
+{
+    times = timeInfo[@"weekday"];
+    [timeTableView reloadData];
+    
+}
 
+- (IBAction)showWeekendTimes:(UIButton *)sender
+{
+    times = timeInfo[@"weekend"];
+    [timeTableView reloadData];
+  
 }
 @end

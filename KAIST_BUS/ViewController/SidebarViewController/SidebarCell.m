@@ -9,6 +9,7 @@
 #import "SidebarCell.h"
 
 @implementation SidebarCell
+@synthesize iconImageView;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

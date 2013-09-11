@@ -21,7 +21,9 @@
     AboutViewController *about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:about];
     
-    
+    navController.navigationBar.backgroundColor = [UIColor colorWithRed:0x23/255.0 green:0x73/255.0 blue:0x134/255.0 alpha:1.0];
+    navController.navigationBar.tintColor = [UIColor colorWithRed:0x23/255.0 green:0x73/255.0 blue:0x134/255.0 alpha:1.0];
+;
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;

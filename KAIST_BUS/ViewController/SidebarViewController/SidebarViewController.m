@@ -8,13 +8,21 @@
 
 #import "SidebarViewController.h"
 #import "SidebarCell.h"
+#import "UINavigationItem+JTRevealSidebarV2.h"
+#import "UIViewController+JTRevealSidebarV2.h"
+#import "TimetableViewController.h"
+
+NSString * const sidebarTitles[] = {@"본원 문지", @"문지 화암", @"화암 본원", @"본원 월평", @"교내순환 OLEV", @"about"};
+#define sidebarTitleCount (sizeof(sidebarTitles) / sizeof(sidebarTitles[0]))
+
+
 
 @interface SidebarViewController ()
 
 @end
 
 @implementation SidebarViewController
-@synthesize cellNibRegistered;
+@synthesize cellNibRegistered, tableView, currentIndexPath, sidebarDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +37,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.tableView selectRowAtIndexPath:self.sidebarDelegate.sidebarIndexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,14 +55,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return sidebarTitleCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     NSUInteger row = [indexPath row];
-    NSUInteger section = [indexPath section];
+    //NSUInteger section = [indexPath section];
     UINib *nib;
     
 
@@ -66,8 +75,8 @@
     }
     SidebarCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
-    cell.titleLabel.text = @[@"본원↔월평", @"본원↔문지", @"문지↔화암", @"OLEV", @"about"][row];
-    
+    cell.titleLabel.text = sidebarTitles[indexPath.row];
+    //cell.iconImageView.image = [UIImage imageNamed:[SidebarViewController sidebarIcons][indexPath.row]];
     return cell;
 }
 /*
@@ -81,9 +90,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.sidebarDelegate) {
-        NSObject *object = @[@"홈", @"할일", @"앨범", @"내 캠페인", @"설정"][indexPath.row];
+        NSObject *object = sidebarTitles[indexPath.row];
+        NSUInteger row = indexPath.row;
+        NSString *title;
+        NSArray *times;
         
-        [self.sidebarDelegate sidebarViewController:self didSelectObject:object atIndexPath:indexPath];
+        TimetableViewController *timetable = [[TimetableViewController alloc] initWithNibName:@"TimetableViewController" bundle:nil];
+        if (row == 0)
+        {
+            times = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BonwonMunji" ofType:@"plist"]];
+            title = @"본원 → 문지";
+        }
+        timetable.timeInfo = times;
+        timetable.title = title;
+        [self.sidebarDelegate sidebarViewController:self didSelectObject:timetable atIndexPath:indexPath];
     }
 }
 
@@ -92,4 +112,16 @@
     return 44.0f;
 }
 
+- (IBAction)closeSidebar:(UISwipeGestureRecognizer *)sender
+{
+    [sidebarDelegate closeSidebarViewController:self];
+   // [self.navigationController setRevealedState:JTRevealedStateNo];
+    //self.sidebarDelegate.view.userInteractionEnabled = YES;
+}
+
+
++ (NSArray *)sidebarIcons
+{
+    return @[@"sidebar_main.png", @"sidebar_todo.png", @"sidebar_album.png", @"sidebar_campaign.png", @"sidebar_setting.png", @"sidebar_statistic.png"];
+}
 @end

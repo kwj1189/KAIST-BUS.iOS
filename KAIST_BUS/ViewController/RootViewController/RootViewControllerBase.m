@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "UINavigationItem+JTRevealSidebarV2.h"
 #import "UIViewController+JTRevealSidebarV2.h"
-
+#import "TimetableViewController.h"
 
 @interface RootViewControllerBase ()
 
@@ -94,9 +94,7 @@
     
     [self.navigationController setRevealedState:JTRevealedStateNo];
     self.view.userInteractionEnabled = YES;
-   // self.navigationController.view.userInteractionEnabled = YES;
-    NSString *album = @"앨범";
-    UIViewController *viewController;
+   // timetableViewController.navigationItem.title = title;
     /*
     if ([album isEqualToString:(NSString *)object])
     {
@@ -121,7 +119,7 @@
     {
         viewController = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
     }*/
-    [self.navigationController setViewControllers:@[viewController] animated:NO];
+    [self.navigationController setViewControllers:@[object] animated:NO];
 
     /*
      ViewController *controller = [[ViewController alloc] init];
