@@ -38,6 +38,9 @@
 		E59DDE4417E0E0A60019AC6B /* TimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE4217E0E0A60019AC6B /* TimetableViewController.m */; };
 		E59DDE4517E0E0A60019AC6B /* TimetableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE4317E0E0A60019AC6B /* TimetableViewController.xib */; };
 		E59DDE4717E0E4D10019AC6B /* BonwonMunji.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE4617E0E4D10019AC6B /* BonwonMunji.plist */; };
+		E59DDE4E17E0F6490019AC6B /* toggle_direction@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE4C17E0F6490019AC6B /* toggle_direction@2x.png */; };
+		E59DDE4F17E0F6490019AC6B /* toggle_direction.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE4D17E0F6490019AC6B /* toggle_direction.png */; };
+		E59DDE5117E0F7E20019AC6B /* MunjiBonwon.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE5017E0F7E10019AC6B /* MunjiBonwon.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,9 @@
 		E59DDE4217E0E0A60019AC6B /* TimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimetableViewController.m; path = TimetableViewController/TimetableViewController.m; sourceTree = "<group>"; };
 		E59DDE4317E0E0A60019AC6B /* TimetableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimetableViewController.xib; path = TimetableViewController/TimetableViewController.xib; sourceTree = "<group>"; };
 		E59DDE4617E0E4D10019AC6B /* BonwonMunji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BonwonMunji.plist; sourceTree = "<group>"; };
+		E59DDE4C17E0F6490019AC6B /* toggle_direction@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle_direction@2x.png"; sourceTree = "<group>"; };
+		E59DDE4D17E0F6490019AC6B /* toggle_direction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggle_direction.png; sourceTree = "<group>"; };
+		E59DDE5017E0F7E10019AC6B /* MunjiBonwon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MunjiBonwon.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 				E59DDDDE17E0D7450019AC6B /* Default@2x.png */,
 				E59DDDE017E0D7450019AC6B /* Default-568h@2x.png */,
 				E59DDE4617E0E4D10019AC6B /* BonwonMunji.plist */,
+				E59DDE5017E0F7E10019AC6B /* MunjiBonwon.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -270,6 +277,8 @@
 		E59DDE3317E0DAA40019AC6B /* img */ = {
 			isa = PBXGroup;
 			children = (
+				E59DDE4C17E0F6490019AC6B /* toggle_direction@2x.png */,
+				E59DDE4D17E0F6490019AC6B /* toggle_direction.png */,
 				E59DDE3417E0DAA40019AC6B /* ButtonMenu.png */,
 				E59DDE3517E0DAA40019AC6B /* ButtonMenu@2x.png */,
 			);
@@ -381,6 +390,9 @@
 				E59DDE3D17E0DB7A0019AC6B /* AboutViewController.xib in Resources */,
 				E59DDE4517E0E0A60019AC6B /* TimetableViewController.xib in Resources */,
 				E59DDE4717E0E4D10019AC6B /* BonwonMunji.plist in Resources */,
+				E59DDE4E17E0F6490019AC6B /* toggle_direction@2x.png in Resources */,
+				E59DDE4F17E0F6490019AC6B /* toggle_direction.png in Resources */,
+				E59DDE5117E0F7E20019AC6B /* MunjiBonwon.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

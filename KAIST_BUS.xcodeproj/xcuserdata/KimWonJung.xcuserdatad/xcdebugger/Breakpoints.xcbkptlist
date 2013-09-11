@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "KAIST_BUS/TimetableViewController/TimetableViewController.m"
-         timestampString = "400618425.079523"
+         timestampString = "400618901.337322"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "30"
-         endingLineNumber = "30"
+         startingLineNumber = "33"
+         endingLineNumber = "33"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>

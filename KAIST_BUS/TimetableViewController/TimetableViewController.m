@@ -27,6 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"toggle_direction.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(toggleDirection:)];
+    ;
     //NSLog(@"times: %@", timeInfo);
     times = timeInfo[@"weekday"];
     // Do any additional setup after loading the view from its nib.

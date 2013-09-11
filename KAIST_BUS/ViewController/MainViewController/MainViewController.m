@@ -29,7 +29,7 @@
     // Do any additional setup after loading the view from its nib.
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"ButtonMenu.png"]  style:UIBarButtonItemStyleBordered target:self action:@selector(revealLeftSidebar)];
-    self.navigationItem.leftBarButtonItem.tintColor = [UIColor grayColor];
+    //self.navigationItem.leftBarButtonItem.tintColor = [UIColor grayColor];
 
 }
 

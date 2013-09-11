@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"ButtonMenu.png"]  style:UIBarButtonItemStyleBordered target:self action:@selector(revealLeftSidebar)];
-    self.navigationItem.leftBarButtonItem.tintColor = [UIColor grayColor];
+    //self.navigationItem.leftBarButtonItem.tintColor = [UIColor grayColor];
     /*
     UIBarButtonItem *barButton = [UIBarButtonItem alloc] initWithImage:<#(UIImage *)#> landscapeImagePhone:<#(UIImage *)#> style:<#(UIBarButtonItemStyle)#> target:<#(id)#> action:<#(SEL)#>]
  barButton.
