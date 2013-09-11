@@ -13,7 +13,7 @@
 @end
 
 @implementation TimetableViewController
-@synthesize timeInfo, times, timeTableView;
+@synthesize timeInfo, times, timeTableView, timeInfos, isWeekday;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,15 +24,41 @@
     return self;
 }
 
+- (NSString *)dateKey
+{
+    return isWeekday ? @"weekday" : @"weekend";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"toggle_direction.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(toggleDirection:)];
-    ;
+    
+    if([timeInfos count] > 1)
+    {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"toggle_direction.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(toggleDirection)];
+    
+    }
+    isWeekday = YES;
+    
+    timeInfo = timeInfos[0];
+    self.navigationItem.title = timeInfo[@"title"];
     //NSLog(@"times: %@", timeInfo);
-    times = timeInfo[@"weekday"];
+    times = timeInfo[[self dateKey]];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)toggleDirection
+{
+    if(timeInfo == timeInfos[0])
+        timeInfo = timeInfos[1];
+    else
+        timeInfo = timeInfos[0];
+    
+    
+    self.navigationItem.title = timeInfo[@"title"];
+    times = timeInfo[[self dateKey]];
+    [timeTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,9 +78,6 @@
 {
     NSUInteger row = [indexPath row];
     NSUInteger section = [indexPath section];
-    
-    UINib *nib;
-    
     static NSString *CellIdentifier = @"TimetableCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -78,6 +101,7 @@
 }
 - (IBAction)showWeekdayTimes:(UIButton *)sender
 {
+    isWeekday = YES;
     times = timeInfo[@"weekday"];
     [timeTableView reloadData];
     
@@ -85,6 +109,7 @@
 
 - (IBAction)showWeekendTimes:(UIButton *)sender
 {
+    isWeekday = NO;
     times = timeInfo[@"weekend"];
     [timeTableView reloadData];
   

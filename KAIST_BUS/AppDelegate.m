@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+#import "TimetableViewController.h"
 #import "AboutViewController.h"
 
 
@@ -18,12 +18,26 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    AboutViewController *about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:about];
+    UINavigationController *navController;
     
-    navController.navigationBar.backgroundColor = [UIColor colorWithRed:0x23/255.0 green:0x73/255.0 blue:0x134/255.0 alpha:1.0];
+    NSArray *timeInfos = [[NSUserDefaults standardUserDefaults] arrayForKey:@"timeInfos"];
+    if (timeInfos)
+    {
+        TimetableViewController *table = [[TimetableViewController alloc] initWithNibName:@"TimetableViewController" bundle:nil];
+        table.timeInfos = timeInfos;
+        navController = [[UINavigationController alloc] initWithRootViewController:table];
+
+    }
+    else
+    {
+    
+        AboutViewController *about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+        navController = [[UINavigationController alloc] initWithRootViewController:about];
+
+//        navController.navigationBar.backgroundColor = [UIColor colorWithRed:0x23/255.0 green:0x73/255.0 blue:0x134/255.0 alpha:1.0];
+    }
     navController.navigationBar.tintColor = [UIColor colorWithRed:0x23/255.0 green:0x73/255.0 blue:0x134/255.0 alpha:1.0];
-;
+
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;

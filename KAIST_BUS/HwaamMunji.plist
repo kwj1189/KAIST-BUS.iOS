@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>문지 ← 화암</string>
+	<key>weekday</key>
+	<array>
+		<string>7:20</string>
+		<string>7:50</string>
+		<string>8:20</string>
+		<string>8:50</string>
+		<string>9:30</string>
+		<string>10:00</string>
+		<string>10:30</string>
+		<string>11:00</string>
+		<string>12:00</string>
+		<string>13:30</string>
+		<string>14:30</string>
+		<string>15:30</string>
+		<string>16:30</string>
+		<string>17:00</string>
+		<string>10:30</string>
+		<string>11:00</string>
+		<string>11:30</string>
+		<string>12:00</string>
+		<string>13:30</string>
+		<string>14:30</string>
+		<string>15:30</string>
+		<string>16:30</string>
+		<string>17:30</string>
+		<string>18:00</string>
+		<string>18:30</string>
+		<string>19:00</string>
+		<string>19:30</string>
+		<string>20:00</string>
+		<string>20:30</string>
+		<string>21:30</string>
+		<string>22:00</string>
+		<string>22:30</string>
+		<string>23:30</string>
+		<string>0:30</string>
+		<string>1:30</string>
+		<string>2:30</string>
+		<string>3:30</string>
+	</array>
+	<key>weekend</key>
+	<array>
+		<string>8:00</string>
+		<string>9:30</string>
+		<string>11:00</string>
+		<string>12:30</string>
+		<string>14:00</string>
+		<string>15:30</string>
+		<string>17:00</string>
+		<string>18:30</string>
+		<string>20:00</string>
+		<string>21:30</string>
+		<string>23:00</string>
+		<string>0:30</string>
+		<string>2:00</string>
+	</array>
+</dict>
+</plist>

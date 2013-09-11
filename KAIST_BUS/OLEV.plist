@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>교내순환 OLEV</string>
+	<key>weekday</key>
+	<array>
+		<string>8:30 ~ 17:30</string>
+		<string>15분 간격 출발</string>
+		<string>점심(12:00 ~ 13:00) 미운행</string>
+		<string>가끔 30분 간격으로 운행하기도 함</string>
+	</array>
+	<key>weekend</key>
+	<array>
+		<string>운영하지 않습니다</string>
+	</array>
+</dict>
+</plist>

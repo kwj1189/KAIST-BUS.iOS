@@ -15,4 +15,6 @@
 @property (strong, nonatomic) NSDictionary *timeInfo;
 @property (strong, nonatomic) IBOutlet UITableView *timeTableView;
 @property (strong, nonatomic) NSArray *times;
+@property (strong, nonatomic) NSArray *timeInfos;
+@property (assign, nonatomic) BOOL isWeekday;
 @end

@@ -9,5 +9,5 @@
 #import "RootViewControllerBase.h"
 #import <MessageUI/MessageUI.h>
 
-@interface AboutViewController : RootViewControllerBase<MFMailComposeViewControllerDelegate>
+@interface AboutViewController : RootViewControllerBase<MFMailComposeViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 @end

@@ -9,7 +9,7 @@
 #import "AboutViewController.h"
 #import <MessageUI/MFMailComposeViewController.h>
 
-NSString * const titles[] = { @"이용약관", @"문의 및 피드백 메일 보내기"};
+NSString * const titles[] = {@"문의 및 피드백 메일 보내기"};
 #define titleCount (sizeof(titles) / sizeof(titles[0]))
 
 @interface AboutViewController ()
@@ -31,7 +31,7 @@ NSString * const titles[] = { @"이용약관", @"문의 및 피드백 메일 보
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.navigationItem.title = @"설정";
+    self.navigationItem.title = @"about";
     
 }
 
@@ -93,6 +93,7 @@ NSString * const titles[] = { @"이용약관", @"문의 및 피드백 메일 보
     return 0;
 }
 
+
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -109,24 +110,34 @@ NSString * const titles[] = { @"이용약관", @"문의 및 피드백 메일 보
         controller.mailComposeDelegate = self;
         [controller setSubject:@"[문의 및 피드백]"];
         [controller setMessageBody:@"" isHTML:NO];
-        [controller setToRecipients:@[@"photox.ios@gmail.com"]];
-        [self showLoading];
+        [controller setToRecipients:@[@"kwj1189@kaist.ac.kr", @"kimdwkimdw@kaist.ac.kr"]];
+        
         [self presentViewController:controller animated:YES completion:^{
-            [self hideLoading];
         }];
         
     }
-    else if ([title isEqualToString:@"이용약관"])
+    else if ([title isEqualToString:@"만든이"])
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"준비중입니다" message:@"빠른 시일 내에 준비하겠습니다" delegate:nil cancelButtonTitle:@"확인" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"김원중" message:@"이용해주셔서 감사합니다" delegate:nil cancelButtonTitle:@"확인" otherButtonTitles:nil, nil];
         [alert show];
     }
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return @"전체시간표 업데이트: 2013. 9. 3\n웹 페이지: http://bus.kaist.ac.kr";
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+{
+    return @"만든이: 김원중@INCLUDE";
+}
+
+
 #pragma  mail delegate
 
-- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {
     if(error)
     {
@@ -134,14 +145,15 @@ NSString * const titles[] = { @"이용약관", @"문의 및 피드백 메일 보
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"메일 전송 실패" message:@"메일을 전송 중에 문제가 생겼습니다" delegate:nil cancelButtonTitle:@"확인" otherButtonTitles:nil, nil];
         [alert show];
     }
-    else
+    else if (result == MFMailComposeResultSent)
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"감사합니다" message:@"메일을 성공적으로 전송했습니다" delegate:nil cancelButtonTitle:@"확인" otherButtonTitles:nil, nil];
         [alert show];
         
     }
-    [self dismissViewControllerAnimated:controller completion:^{}];
+    [self dismissViewControllerAnimated:controller completion:nil];
 }
+
 
 
 @end

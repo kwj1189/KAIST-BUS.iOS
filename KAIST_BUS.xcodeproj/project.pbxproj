@@ -21,8 +21,6 @@
 		E59DDDEB17E0D7450019AC6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59DDDCC17E0D7450019AC6B /* Foundation.framework */; };
 		E59DDDF317E0D7450019AC6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E59DDDF117E0D7450019AC6B /* InfoPlist.strings */; };
 		E59DDDF617E0D7450019AC6B /* KAIST_BUSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDDF517E0D7450019AC6B /* KAIST_BUSTests.m */; };
-		E59DDE0E17E0D83C0019AC6B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE0C17E0D83C0019AC6B /* MainViewController.m */; };
-		E59DDE0F17E0D83C0019AC6B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE0D17E0D83C0019AC6B /* MainViewController.xib */; };
 		E59DDE1717E0D85A0019AC6B /* SidebarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE1217E0D85A0019AC6B /* SidebarCell.m */; };
 		E59DDE1817E0D85A0019AC6B /* SidebarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE1317E0D85A0019AC6B /* SidebarCell.xib */; };
 		E59DDE1917E0D85A0019AC6B /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59DDE1517E0D85A0019AC6B /* SidebarViewController.m */; };
@@ -41,6 +39,13 @@
 		E59DDE4E17E0F6490019AC6B /* toggle_direction@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE4C17E0F6490019AC6B /* toggle_direction@2x.png */; };
 		E59DDE4F17E0F6490019AC6B /* toggle_direction.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE4D17E0F6490019AC6B /* toggle_direction.png */; };
 		E59DDE5117E0F7E20019AC6B /* MunjiBonwon.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE5017E0F7E10019AC6B /* MunjiBonwon.plist */; };
+		E59DDE5317E0FDC90019AC6B /* MunjiHwaam.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE5217E0FDC90019AC6B /* MunjiHwaam.plist */; };
+		E59DDE5517E101130019AC6B /* HwaamMunji.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE5417E101130019AC6B /* HwaamMunji.plist */; };
+		E59DDE5717E102E80019AC6B /* BonwonWolpyeong.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE5617E102E80019AC6B /* BonwonWolpyeong.plist */; };
+		E59DDE5917E1037E0019AC6B /* WolpyeongBonwon.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE5817E1037E0019AC6B /* WolpyeongBonwon.plist */; };
+		E59DDE5B17E104080019AC6B /* OLEV.plist in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE5A17E104080019AC6B /* OLEV.plist */; };
+		E59DDE5E17E1112A0019AC6B /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE5C17E1112A0019AC6B /* shadow.png */; };
+		E59DDE5F17E1112A0019AC6B /* shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E59DDE5D17E1112A0019AC6B /* shadow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +78,6 @@
 		E59DDDF217E0D7450019AC6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E59DDDF417E0D7450019AC6B /* KAIST_BUSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAIST_BUSTests.h; sourceTree = "<group>"; };
 		E59DDDF517E0D7450019AC6B /* KAIST_BUSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAIST_BUSTests.m; sourceTree = "<group>"; };
-		E59DDE0B17E0D83C0019AC6B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewController/MainViewController/MainViewController.h; sourceTree = "<group>"; };
-		E59DDE0C17E0D83C0019AC6B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewController/MainViewController/MainViewController.m; sourceTree = "<group>"; };
-		E59DDE0D17E0D83C0019AC6B /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ViewController/MainViewController/MainViewController.xib; sourceTree = "<group>"; };
 		E59DDE1117E0D85A0019AC6B /* SidebarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarCell.h; sourceTree = "<group>"; };
 		E59DDE1217E0D85A0019AC6B /* SidebarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarCell.m; sourceTree = "<group>"; };
 		E59DDE1317E0D85A0019AC6B /* SidebarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidebarCell.xib; sourceTree = "<group>"; };
@@ -102,6 +104,13 @@
 		E59DDE4C17E0F6490019AC6B /* toggle_direction@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle_direction@2x.png"; sourceTree = "<group>"; };
 		E59DDE4D17E0F6490019AC6B /* toggle_direction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggle_direction.png; sourceTree = "<group>"; };
 		E59DDE5017E0F7E10019AC6B /* MunjiBonwon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MunjiBonwon.plist; sourceTree = "<group>"; };
+		E59DDE5217E0FDC90019AC6B /* MunjiHwaam.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MunjiHwaam.plist; sourceTree = "<group>"; };
+		E59DDE5417E101130019AC6B /* HwaamMunji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HwaamMunji.plist; sourceTree = "<group>"; };
+		E59DDE5617E102E80019AC6B /* BonwonWolpyeong.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BonwonWolpyeong.plist; sourceTree = "<group>"; };
+		E59DDE5817E1037E0019AC6B /* WolpyeongBonwon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WolpyeongBonwon.plist; sourceTree = "<group>"; };
+		E59DDE5A17E104080019AC6B /* OLEV.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OLEV.plist; sourceTree = "<group>"; };
+		E59DDE5C17E1112A0019AC6B /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
+		E59DDE5D17E1112A0019AC6B /* shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shadow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +194,11 @@
 				E59DDDE017E0D7450019AC6B /* Default-568h@2x.png */,
 				E59DDE4617E0E4D10019AC6B /* BonwonMunji.plist */,
 				E59DDE5017E0F7E10019AC6B /* MunjiBonwon.plist */,
+				E59DDE5217E0FDC90019AC6B /* MunjiHwaam.plist */,
+				E59DDE5417E101130019AC6B /* HwaamMunji.plist */,
+				E59DDE5617E102E80019AC6B /* BonwonWolpyeong.plist */,
+				E59DDE5817E1037E0019AC6B /* WolpyeongBonwon.plist */,
+				E59DDE5A17E104080019AC6B /* OLEV.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,19 +229,8 @@
 				E59DDE3817E0DB790019AC6B /* AboutViewController */,
 				E59DDE2E17E0D9CC0019AC6B /* RootViewController */,
 				E59DDE1017E0D85A0019AC6B /* SidebarViewController */,
-				E59DDE0017E0D7640019AC6B /* MainViewController */,
 			);
 			name = ViewController;
-			sourceTree = "<group>";
-		};
-		E59DDE0017E0D7640019AC6B /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E59DDE0B17E0D83C0019AC6B /* MainViewController.h */,
-				E59DDE0C17E0D83C0019AC6B /* MainViewController.m */,
-				E59DDE0D17E0D83C0019AC6B /* MainViewController.xib */,
-			);
-			name = MainViewController;
 			sourceTree = "<group>";
 		};
 		E59DDE1017E0D85A0019AC6B /* SidebarViewController */ = {
@@ -277,6 +280,8 @@
 		E59DDE3317E0DAA40019AC6B /* img */ = {
 			isa = PBXGroup;
 			children = (
+				E59DDE5C17E1112A0019AC6B /* shadow.png */,
+				E59DDE5D17E1112A0019AC6B /* shadow@2x.png */,
 				E59DDE4C17E0F6490019AC6B /* toggle_direction@2x.png */,
 				E59DDE4D17E0F6490019AC6B /* toggle_direction.png */,
 				E59DDE3417E0DAA40019AC6B /* ButtonMenu.png */,
@@ -382,7 +387,6 @@
 				E59DDDDD17E0D7450019AC6B /* Default.png in Resources */,
 				E59DDDDF17E0D7450019AC6B /* Default@2x.png in Resources */,
 				E59DDDE117E0D7450019AC6B /* Default-568h@2x.png in Resources */,
-				E59DDE0F17E0D83C0019AC6B /* MainViewController.xib in Resources */,
 				E59DDE1817E0D85A0019AC6B /* SidebarCell.xib in Resources */,
 				E59DDE1A17E0D85A0019AC6B /* SidebarViewController.xib in Resources */,
 				E59DDE3617E0DAA40019AC6B /* ButtonMenu.png in Resources */,
@@ -393,6 +397,13 @@
 				E59DDE4E17E0F6490019AC6B /* toggle_direction@2x.png in Resources */,
 				E59DDE4F17E0F6490019AC6B /* toggle_direction.png in Resources */,
 				E59DDE5117E0F7E20019AC6B /* MunjiBonwon.plist in Resources */,
+				E59DDE5317E0FDC90019AC6B /* MunjiHwaam.plist in Resources */,
+				E59DDE5517E101130019AC6B /* HwaamMunji.plist in Resources */,
+				E59DDE5717E102E80019AC6B /* BonwonWolpyeong.plist in Resources */,
+				E59DDE5917E1037E0019AC6B /* WolpyeongBonwon.plist in Resources */,
+				E59DDE5B17E104080019AC6B /* OLEV.plist in Resources */,
+				E59DDE5E17E1112A0019AC6B /* shadow.png in Resources */,
+				E59DDE5F17E1112A0019AC6B /* shadow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +440,6 @@
 			files = (
 				E59DDDD717E0D7450019AC6B /* main.m in Sources */,
 				E59DDDDB17E0D7450019AC6B /* AppDelegate.m in Sources */,
-				E59DDE0E17E0D83C0019AC6B /* MainViewController.m in Sources */,
 				E59DDE1717E0D85A0019AC6B /* SidebarCell.m in Sources */,
 				E59DDE1917E0D85A0019AC6B /* SidebarViewController.m in Sources */,
 				E59DDE2C17E0D9290019AC6B /* UINavigationItem+JTRevealSidebarV2.m in Sources */,

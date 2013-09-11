@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>본원 ← 월평</string>
+	<key>weekday</key>
+	<array>
+		<string>8:28(출근)</string>
+		<string>10:00</string>
+		<string>11:00</string>
+		<string>12:00</string>
+		<string>13:00</string>
+		<string>14:00</string>
+		<string>15:00</string>
+		<string>16:00</string>
+		<string>17:00</string>
+	</array>
+	<key>weekend</key>
+	<array>
+		<string>운영하지 않습니다</string>
+	</array>
+</dict>
+</plist>

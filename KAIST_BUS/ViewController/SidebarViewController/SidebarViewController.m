@@ -11,8 +11,9 @@
 #import "UINavigationItem+JTRevealSidebarV2.h"
 #import "UIViewController+JTRevealSidebarV2.h"
 #import "TimetableViewController.h"
-
-NSString * const sidebarTitles[] = {@"본원 문지", @"문지 화암", @"화암 본원", @"본원 월평", @"교내순환 OLEV", @"about"};
+#import "AboutViewController.h"
+//↔⟷
+NSString * const sidebarTitles[] = {@"본원⇄문지", @"문지⇄화암", @"본원⇄월평", @"교내순환 OLEV", @"about"};
 #define sidebarTitleCount (sizeof(sidebarTitles) / sizeof(sidebarTitles[0]))
 
 
@@ -84,6 +85,16 @@ NSString * const sidebarTitles[] = {@"본원 문지", @"문지 화암", @"화암
   
 }
 */
+- (NSDictionary *)plistFromFilename: (NSString *)filename
+{
+    return [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:filename ofType:@"plist"]];
+}
+
+- (NSArray *)timeInfosByPlist1: (NSString *)filename1 andPlist2: (NSString *)filename2
+{
+    return @[[self plistFromFilename:filename1], [self plistFromFilename:filename2]];
+}
+
 
 #pragma mark - Table view delegate
 
@@ -94,15 +105,40 @@ NSString * const sidebarTitles[] = {@"본원 문지", @"문지 화암", @"화암
         NSUInteger row = indexPath.row;
         NSString *title;
         NSArray *times;
-        
+        NSArray *timeInfos;
         TimetableViewController *timetable = [[TimetableViewController alloc] initWithNibName:@"TimetableViewController" bundle:nil];
+        
+        
+        if (row == 4)
+        {
+            //about
+            AboutViewController *about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+            [self.sidebarDelegate sidebarViewController:self didSelectObject:about atIndexPath:indexPath];
+            return;
+        }
+        
+
         if (row == 0)
         {
-            times = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"BonwonMunji" ofType:@"plist"]];
-            title = @"본원 → 문지";
+            timeInfos  = [self timeInfosByPlist1:@"BonwonMunji" andPlist2:@"MunjiBonwon"];
+            
         }
-        timetable.timeInfo = times;
-        timetable.title = title;
+        else if (row == 1)
+        {
+            timeInfos = [self timeInfosByPlist1:@"MunjiHwaam" andPlist2:@"HwaamMunji"];
+        }
+        else if (row == 2)
+        {
+            timeInfos = [self timeInfosByPlist1:@"BonwonWolpyeong" andPlist2:@"WolpyeongBonwon"];
+        }
+        else if (row == 3)
+        {
+            timeInfos = @[[self plistFromFilename:@"OLEV"]];
+        }
+
+        timetable.timeInfos = timeInfos;
+        [[NSUserDefaults standardUserDefaults] setObject:timeInfos forKey:@"timeInfos"];
+        NSArray *infos = [[NSUserDefaults standardUserDefaults] arrayForKey:@"timeInfos"];
         [self.sidebarDelegate sidebarViewController:self didSelectObject:timetable atIndexPath:indexPath];
     }
 }
