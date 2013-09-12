@@ -56,6 +56,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)closeSidebarViewController:(SidebarViewController *)sidebarViewController
+{
+    [self.navigationController setRevealedState:JTRevealedStateNo];
+    self.view.userInteractionEnabled = YES;
+
+}
 
 
 - (void)revealLeftSidebar
